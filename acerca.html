@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Ginaira</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden; /* Evitar barras de desplazamiento */
+            font-family: 'Courier New', monospace;
+            color: #fefdfd;
+        }
+
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('acerca.jpg'); /* Reemplaza con tu imagen */
+            background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+            background-position: center;
+            z-index: 1; /* Mantiene la imagen detrás del contenido */
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+            color: rgb(240, 239, 239);
+            padding: 20px;
+            text-align: center;
+            position: relative; /* Para posicionar elementos */
+            z-index: 10; /* Asegurarse de que el encabezado esté por encima de la imagen */
+            width: 100%; /* Asegurar que el encabezado cubra todo el ancho */
+        }
+
+        .logo {
+            font-size: 2.5em;
+            letter-spacing: 10px;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 50px;
+        }
+
+        nav ul li {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(252, 251, 251);
+        }
+
+        nav ul li::after {
+            content: "|";
+            margin-left: 20px;
+            color: rgb(246, 244, 244);
+        }
+
+        nav ul li:last-child::after {
+            content: "";
+        }
+
+        .content {
+            display: flex; /* Cambiado a flexbox */
+            align-items: center; /* Centrar verticalmente */
+            justify-content: center; /* Centrar horizontalmente */
+            z-index: 10; /* Asegurarse de que el contenido esté por encima de la imagen */
+            position: relative; /* Para permitir el uso de z-index */
+            margin-top: 100px; /* Separar del encabezado */
+        }
+
+        h3 {
+            font-size: 1.5em;
+            margin: 0 20px; /* Margen alrededor del texto */
+            color: white; /* Color del texto */
+            text-align: left; /* Alinear texto a la izquierda */
+            max-width: 500px; /* Limitar ancho del texto */
+        }
+
+        img {
+            max-width: 300px; /* Ajusta el tamaño máximo de la imagen */
+            height: auto; /* Mantener proporciones de la imagen */
+            border-radius: 10px; /* Bordes redondeados opcional */
+        }
+
+        a.button {
+            display: inline-block;
+            padding: 10px 20px;
+            background: rgb(246, 241, 241);
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+            text-align: center; /* Centrar el texto del botón */
+        }
+    </style>
+</head>
+<body>
+    <div class="background-image"></div>
+
+    <header>
+        <div class="logo">V-P-G-R</div>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">INICIO</a></li>
+                <li><a href="acerca.html">ACERCA DE</a></li>
+                <li><a href="curso.html">CURSO</a></li>
+                <li><a href="semana.html">SEMANA</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        <h3>Esta página te brinda información de mi aprendizaje como estudiante del programación de estudio de diseño y programación web. Aquí compartiré mi trabajo y experiencia.</h3>
+        <img src="logo.png" alt="Descripción de la imagen"> <!-- Reemplaza con tu imagen -->
+    </div>
+
+    <div style="text-align: center; margin-top: 20px;">
+        <a href="curso.html" class="button">Explora el Curso</a>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+
+
+
+

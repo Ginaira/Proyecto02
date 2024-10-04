@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Ginaira</title>
+    <style>
+        /* Mismo estilo que en index.html */
+        body {
+            margin: 0;
+            overflow: hidden; /* Evitar barras de desplazamiento */
+            font-family: 'Courier New', monospace;
+            color: #333;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+            color: black;
+            padding: 20px;
+            text-align: center;
+            position: relative; /* Para posicionar elementos */
+            z-index: 10; /* Asegurarse de que el encabezado esté por encima del video */
+        }
+
+        .logo {
+            font-size: 2.5em;
+            letter-spacing: 10px;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 50px;
+        }
+
+        nav ul li {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        nav ul li::after {
+            content: "|";
+            margin-left: 20px;
+            color: black;
+        }
+
+        nav ul li:last-child::after {
+            content: "";
+        }
+
+        .container {
+            max-width: 800px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+            width: 100%;
+            position: relative; /* Para que el contenedor no se superponga al video */
+            z-index: 10; /* Asegurarse de que el contenedor esté por encima del video */
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 1.5em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+
+        a.button {
+            display: inline-block;
+            padding: 10px 20px;
+            background: black;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+
+        video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Para mantener la relación de aspecto */
+            z-index: 1; /* Video detrás del contenido */
+        }
+    </style>
+</head>
+<body>
+    <video autoplay loop muted>
+        <source src="video.mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+    </video>
+
+    <header>
+        <div class="logo">V-P-G-R</div>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">INICIO</a></li>
+                <li><a href="acerca.html">ACERCA DE</a></li>
+                <li><a href="curso.html">CURSO</a></li>
+                <li><a href="semana.html">SEMANA</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+

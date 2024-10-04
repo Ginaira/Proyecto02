@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Ginaira</title>
+    <style>
+        body {
+            background-image: url(fon1.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            font-family: 'Courier New', monospace;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        header {
+            background: white;
+            color: black;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+            width: 100%;
+            border-bottom: 2px solid black;
+        }
+
+        .logo {
+            font-size: 2.5em;
+            letter-spacing: 10px;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 50px;
+        }
+
+        nav ul li {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        nav ul li::after {
+            content: "|";
+            margin-left: 20px;
+            color: black;
+        }
+
+        nav ul li:last-child::after {
+            content: ""; /* Elimina la barra después del último elemento */
+        }
+
+        .container, .description-container {
+            max-width: 800px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+            width: 100%;
+            margin-top: 100px;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">V-P-G</div>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">INICIO</a></li>
+                <li><a href="acerca.html">ACERCA DE</a></li>
+                <li><a href="curso.html">CURSO</a></li>
+                <li><a href="semana.html">SEMANA</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>¡Bienvenido a Valerio-Ginaira!</h2>
+        <p>A mi proyecto de programación.</p>
+        <p>Aquí encontrarás el área y las semanas.</p>
+        <p>¡Explora!</p>
+    </div>
+
+    <div class="description-container">
+        <h2>Sobre mí</h2>
+        <p>Hola, soy Valerio. Soy estudiante del sexto semestre de la carrera de Programación Web. Este portafolio está diseñado para mostrar mis
+            trabajos y proyectos realizados durante el curso de Programación de Aplicaciones Web y Móviles.</p>
+        <p>¡Estoy emocionado de que formes parte de esto!</p>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+

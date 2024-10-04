@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso - Valerio-Ginaira</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Mismo estilo que en index.html */
+        body {
+            background-image: url(curso.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            font-family: 'Courier New', monospace;
+            margin: 0;
+            padding: 20px;
+            color: #333333;
+        }
+        
+
+        header {
+            color: black;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+            width: 100%;
+            border-bottom: 2px solid black;
+        }
+        /* Logo estilo como en la imagen */
+        .logo {
+            font-size: 2.5em;
+            letter-spacing: 10px;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 50px;
+        }
+
+        nav ul li {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        nav ul li::after {
+            content: "|";
+            margin-left: 20px;
+            color: black;
+        }
+
+        nav ul li:last-child::after {
+            content: "";
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px; /* Aumenta el espacio entre tarjetas */
+            background: black;
+        }
+
+        .card {
+            background: #fccbff; /* Color de fondo más atractivo */
+            border-radius: 10px; /* Mejora la curva de las esquinas */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+            padding: 20px;
+            flex: 1 1 45%; /* Mantiene un tamaño adecuado */
+            min-width: 300px; /* Ancho mínimo */
+            text-align: justify; /* Justifica el texto */
+            transition: transform 0.2s; /* Suaviza la animación al hacer clic */
+        }
+
+        .card:hover {
+            transform: scale(1.05); /* Aumenta el tamaño al pasar el mouse */
+        }
+
+        .card:active {
+            transform: scale(0.95); /* Reduce el tamaño al hacer clic */
+        }
+
+        h2, h3 {
+            color: #0e0000;
+        }
+        
+        /* Nueva clase para las imágenes */
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">V-P-G-R</div> <!-- Simula el estilo del logo de la imagen -->
+        <nav>
+            <ul>
+                <li><a href="inicio.html">INICIO</a></li>
+                <li><a href="acerca.html">Acerca de</a></li>
+                <li><a href="curso.html">CURSO</a></li>
+                <li><a href="semana.html">SEMANA</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="card">
+            <h2>Programa de Estudios</h2>
+            <h3>Diseño y Programación Web</h3>
+        </div>
+        
+        <div class="card">
+            <p><strong>Descripción:</strong></p>
+            <p><strong>Módulo:</strong> Integración de aplicaciones web y móviles</p>
+            <p><strong>Unidad Didáctica:</strong> Programación de aplicaciones web y móviles</p>
+            <p><strong>Semestre Académico:</strong> VI semestre</p>
+            <p><strong>Docente:</strong> Ing. Raúl Fernández Bejarano</p>
+        </div>
+        
+        <div class="card">
+            
+            <h3>Competencia del Módulo Profesional</h3>
+            <p>Desarrollar las pruebas integrales de los sistemas de información y servicios de TI en la fase de implantación, de acuerdo al diseño funcional, buenas prácticas de TI y políticas de seguridad de la organización.</p>
+        </div>
+        
+        <div class="card">
+        
+            <h3>Capacidades Terminales</h3>
+            <p>Planificar e implementar proyectos tecnológicos relacionados con tecnologías móviles teniendo en cuenta los niveles de funcionabilidad y seguridad.</p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+
+
